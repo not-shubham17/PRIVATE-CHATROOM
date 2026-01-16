@@ -1,16 +1,61 @@
-# Run and deploy your AI Studio app
+# SecureRoom Chat
 
-This contains everything you need to run your app locally.
+A private, real-time chatroom application featuring instant messaging, live presence tracking, and dark-themed UI.
 
-View your app in AI Studio: https://ai.studio/apps/drive/1W3i7CB-hLp6I3CCDLL-ql5bqPtz6spD4
+## Features
+
+- **Real-time messaging** via WebSockets (Socket.IO)
+- **Room-based chat** with unique room codes
+- **User presence tracking** with live user lists
+- **Typing indicators** - see when users are typing
+- **Dark-themed UI** with modern, responsive design
+- **Private and secure** room-based communication
+
+## Tech Stack
+
+- **Frontend**: React + TypeScript + Vite
+- **Backend**: Node.js + Express + Socket.IO
+- **Styling**: Tailwind CSS
 
 ## Run Locally
 
-**Prerequisites:**  Node.js
-
+**Prerequisites:** Node.js
 
 1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+   ```bash
+   npm install
+   ```
+
+2. Install server dependencies:
+   ```bash
+   cd server
+   npm install
+   ```
+
+3. Start the backend server:
+   ```bash
+   cd server
+   npm start
+   ```
+
+4. Start the frontend development server (in a new terminal):
+   ```bash
+   npm run dev
+   ```
+
+5. Open your browser and navigate to `http://localhost:3000`
+
+## Project Structure
+
+```
+├── components/          # React components (ChatRoom, JoinRoom, UserList)
+├── services/           # Socket service
+├── server/             # Backend server files
+├── types.ts            # TypeScript type definitions
+├── App.tsx             # Main application component
+└── index.tsx           # Entry point
+```
+
+## License
+
+MIT License
