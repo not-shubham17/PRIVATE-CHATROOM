@@ -1,0 +1,5 @@
+{
+  "name": "SecureRoom Chat",
+  "description": "A private, real-time chatroom application featuring instant messaging, live presence tracking, and dark-themed UI.",
+  "requestFramePermissions": []
+}
